@@ -1,0 +1,7 @@
+[01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_subscriber.cpp:[m[K In constructor ‘[01m[KSimpleSubscriber::SimpleSubscriber(std::string)[m[K’:
+[01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_subscriber.cpp:10:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kspin[m[K’ has not been declared
+   10 |         command_subscriber = this->create_subscription("subscriber",10,[01;31m[Kspin[m[K::bind(&SimpleSubscriber::subscriber_callback,this,std::placeholders::_1))
+      |                                                                        [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_subscriber.dir/build.make:76：CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/simple_subscriber.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

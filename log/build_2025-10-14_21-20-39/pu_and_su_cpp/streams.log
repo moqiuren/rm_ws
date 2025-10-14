@@ -1,0 +1,21 @@
+[0.009s] Invoking command in '/home/qiu/rm_ws/build/pu_and_su_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/qiu/rm_ws/build/pu_and_su_cpp -- -j4 -l4
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target simple_publisher[0m
+[0.074s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o[0m
+[1.787s] [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:[m[K In member function ‘[01m[Kvoid SimplePublisher::init_random_generator()[m[K’:
+[1.787s] [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:23:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgen_[m[K’ was not declared in this scope
+[1.787s]    23 |         [01;31m[Kgen_[m[K.seed(e());
+[1.787s]       |         [01;31m[K^~~~[m[K
+[1.790s] [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:24:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist_[m[K’ was not declared in this scope
+[1.791s]    24 |         [01;31m[Kdist_[m[K = std::uniform_int_distribution<int> (0,100);
+[1.791s]       |         [01;31m[K^~~~~[m[K
+[1.794s] [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:[m[K In member function ‘[01m[Kvoid SimplePublisher::timer_callback()[m[K’:
+[1.794s] [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:31:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kgen_[m[K’ was not declared in this scope
+[1.794s]    31 |         message.data = dist_([01;31m[Kgen_[m[K);
+[1.794s]       |                              [01;31m[K^~~~[m[K
+[1.796s] [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:31:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist_[m[K’ was not declared in this scope
+[1.796s]    31 |         message.data = [01;31m[Kdist_[m[K(gen_);
+[1.796s]       |                        [01;31m[K^~~~~[m[K
+[2.347s] gmake[2]: *** [CMakeFiles/simple_publisher.dir/build.make:76：CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o] 错误 1
+[2.347s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/simple_publisher.dir/all] 错误 2
+[2.348s] gmake: *** [Makefile:146：all] 错误 2
+[2.350s] Invoked command in '/home/qiu/rm_ws/build/pu_and_su_cpp' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/qiu/rm_ws/build/pu_and_su_cpp -- -j4 -l4

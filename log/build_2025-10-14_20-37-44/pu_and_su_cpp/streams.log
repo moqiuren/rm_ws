@@ -1,0 +1,26 @@
+[0.011s] Invoking command in '/home/qiu/rm_ws/build/pu_and_su_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/qiu/rm_ws/build/pu_and_su_cpp -- -j4 -l4
+[0.056s] [35m[1mConsolidate compiler generated dependencies of target simple_publisher[0m
+[0.072s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o[0m
+[3.236s] [100%] [32m[1mLinking CXX executable simple_publisher[0m
+[3.490s] [100%] Built target simple_publisher
+[3.500s] Invoked command in '/home/qiu/rm_ws/build/pu_and_su_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/qiu/rm_ws/build/pu_and_su_cpp -- -j4 -l4
+[3.507s] Invoking command in '/home/qiu/rm_ws/build/pu_and_su_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/qiu/rm_ws/build/pu_and_su_cpp
+[3.513s] -- Install configuration: ""
+[3.513s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/ament_index/resource_index/package_run_dependencies/pu_and_su_cpp
+[3.513s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/ament_index/resource_index/parent_prefix_path/pu_and_su_cpp
+[3.513s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/pu_and_su_cpp/environment/ament_prefix_path.sh
+[3.513s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/pu_and_su_cpp/environment/ament_prefix_path.dsv
+[3.514s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/pu_and_su_cpp/environment/path.sh
+[3.514s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/pu_and_su_cpp/environment/path.dsv
+[3.514s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/pu_and_su_cpp/local_setup.bash
+[3.514s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/pu_and_su_cpp/local_setup.sh
+[3.515s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/pu_and_su_cpp/local_setup.zsh
+[3.515s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/pu_and_su_cpp/local_setup.dsv
+[3.515s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/pu_and_su_cpp/package.dsv
+[3.515s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/ament_index/resource_index/packages/pu_and_su_cpp
+[3.515s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/pu_and_su_cpp/cmake/pu_and_su_cppConfig.cmake
+[3.515s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/pu_and_su_cpp/cmake/pu_and_su_cppConfig-version.cmake
+[3.515s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/share/pu_and_su_cpp/package.xml
+[3.515s] -- Installing: /home/qiu/rm_ws/install/pu_and_su_cpp/lib/pu_and_su_cpp/simple_publisher
+[3.515s] -- Set runtime path of "/home/qiu/rm_ws/install/pu_and_su_cpp/lib/pu_and_su_cpp/simple_publisher" to ""
+[3.517s] Invoked command in '/home/qiu/rm_ws/build/pu_and_su_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/qiu/rm_ws/build/pu_and_su_cpp

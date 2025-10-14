@@ -1,0 +1,118 @@
+[0.015s] Invoking command in '/home/qiu/rm_ws/build/pu_and_su_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/qiu/rm_ws/src/pu_and_su_cpp -DCMAKE_INSTALL_PREFIX=/home/qiu/rm_ws/install/pu_and_su_cpp
+[0.204s] -- The C compiler identification is GNU 11.4.0
+[0.352s] -- The CXX compiler identification is GNU 11.4.0
+[0.371s] -- Detecting C compiler ABI info
+[0.460s] -- Detecting C compiler ABI info - done
+[0.464s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.465s] -- Detecting C compile features
+[0.466s] -- Detecting C compile features - done
+[0.472s] -- Detecting CXX compiler ABI info
+[0.552s] -- Detecting CXX compiler ABI info - done
+[0.556s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.557s] -- Detecting CXX compile features
+[0.557s] -- Detecting CXX compile features - done
+[0.570s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.698s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.851s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.929s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.937s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.953s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.982s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.008s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.078s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.083s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.188s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.210s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.239s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.254s] -- Looking for pthread.h
+[1.331s] -- Looking for pthread.h - found
+[1.332s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.402s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.403s] -- Found Threads: TRUE  
+[1.491s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.574s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.575s] -- Configured cppcheck include dirs: 
+[1.575s] -- Configured cppcheck exclude dirs and/or files: 
+[1.576s] -- Added test 'lint_cmake' to check CMake code style
+[1.578s] -- Added test 'uncrustify' to check C / C++ code style
+[1.578s] -- Configured uncrustify additional arguments: 
+[1.579s] -- Added test 'xmllint' to check XML markup files
+[1.582s] -- Configuring done
+[1.589s] -- Generating done
+[1.591s] -- Build files have been written to: /home/qiu/rm_ws/build/pu_and_su_cpp
+[1.597s] Invoked command in '/home/qiu/rm_ws/build/pu_and_su_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/qiu/rm_ws/src/pu_and_su_cpp -DCMAKE_INSTALL_PREFIX=/home/qiu/rm_ws/install/pu_and_su_cpp
+[1.599s] Invoking command in '/home/qiu/rm_ws/build/pu_and_su_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/qiu/rm_ws/build/pu_and_su_cpp -- -j4 -l4
+[1.645s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o[0m
+[4.421s] [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:[m[K In constructor ‘[01m[KSimplePublisher::SimplePublisher(std::string)[m[K’:
+[4.423s] [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:12:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kmillisecond[m[K’ is not a member of ‘[01m[Kstd::chrono[m[K’; did you mean ‘[01m[Kmilliseconds[m[K’?
+[4.423s]    12 |         timer = this->create_wall_timer(std::chrono::[01;31m[Kmillisecond[m[K(500),std::bind(&SimplePublisher::timer_callback,this))
+[4.423s]       |                                                      [01;31m[K^~~~~~~~~~~[m[K
+[4.423s]       |                                                      [32m[Kmilliseconds[m[K
+[4.427s] [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:[m[K In member function ‘[01m[Kvoid SimplePublisher::timer_callback()[m[K’:
+[4.427s] [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:21:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs::std[m[K’ has not been declared
+[4.427s]    21 |         std_msgs::[01;31m[Kstd[m[K::String msg;
+[4.427s]       |                   [01;31m[K^~~[m[K
+[4.427s] [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:22:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[4.427s]    22 |         [01;31m[Kmsg[m[K = "over";
+[4.427s]       |         [01;31m[K^~~[m[K
+[4.429s] [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:22:9:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[4.429s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+[4.429s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[4.429s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.430s]                  from [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:1[m[K:
+[4.430s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[4.430s]    27 | namespace [01;36m[Kmsg[m[K
+[4.430s]       |           [01;36m[K^~~[m[K
+[4.430s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.430s]                  from [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:1[m[K:
+[4.430s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[4.430s]    27 | namespace [01;36m[Kmsg[m[K
+[4.431s]       |           [01;36m[K^~~[m[K
+[4.431s] In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+[4.431s]                  from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[4.431s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[4.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[4.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[4.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[4.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.431s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.431s]                  from [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:1[m[K:
+[4.431s] [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[4.431s]    27 | namespace [01;36m[Kmsg[m[K
+[4.431s]       |           [01;36m[K^~~[m[K
+[4.431s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+[4.431s]                  from [01m[K/home/qiu/rm_ws/src/pu_and_su_cpp/src/simple_publisher.cpp:2[m[K:
+[4.431s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[4.431s]    27 | namespace [01;36m[Kmsg[m[K
+[4.431s]       |           [01;36m[K^~~[m[K
+[5.055s] gmake[2]: *** [CMakeFiles/simple_publisher.dir/build.make:76：CMakeFiles/simple_publisher.dir/src/simple_publisher.cpp.o] 错误 1
+[5.055s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/simple_publisher.dir/all] 错误 2
+[5.055s] gmake: *** [Makefile:146：all] 错误 2
+[5.058s] Invoked command in '/home/qiu/rm_ws/build/pu_and_su_cpp' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/qiu/rm_ws/build/pu_and_su_cpp -- -j4 -l4

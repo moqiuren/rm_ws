@@ -1,0 +1,12 @@
+# 过滤编译产物目录
+build/
+install/
+log/
+# 过滤 IDE 配置文件（如 VS Code）
+.vscode/
+# 过滤临时文件
+*.swp
+*.tmp
+# 过滤 ROS 2 日志和缓存
+*.log
+.catkin_workspace

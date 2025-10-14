@@ -1,0 +1,6 @@
+[ 20%] Built target simple_publisher
+[ 40%] Built target mix_publisher_01
+[ 60%] Built target simple_subscriber
+[ 80%] Built target mix_publisher_02
+[35m[1mConsolidate compiler generated dependencies of target mix_subscriber_01[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/mix_subscriber_01.dir/src/mix_subscriber_01.cpp.o[0m

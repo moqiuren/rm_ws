@@ -1,4 +1,0 @@
-Invoking command in '/home/qiu/rm_ws/build/pu_and_su_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/qiu/rm_ws/src/pu_and_su_cpp -DCMAKE_INSTALL_PREFIX=/home/qiu/rm_ws/install/pu_and_su_cpp
-Invoked command in '/home/qiu/rm_ws/build/pu_and_su_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/qiu/rm_ws/src/pu_and_su_cpp -DCMAKE_INSTALL_PREFIX=/home/qiu/rm_ws/install/pu_and_su_cpp
-Invoking command in '/home/qiu/rm_ws/build/pu_and_su_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/qiu/rm_ws/build/pu_and_su_cpp -- -j4 -l4
-Invoked command in '/home/qiu/rm_ws/build/pu_and_su_cpp' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/qiu/rm_ws/build/pu_and_su_cpp -- -j4 -l4

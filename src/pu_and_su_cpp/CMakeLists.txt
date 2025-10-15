@@ -29,11 +29,15 @@ add_executable(simple_subscriber src/simple_subscriber.cpp)
 add_executable(mix_publisher_01 src/mix_publisher_01.cpp)
 add_executable(mix_publisher_02 src/mix_publisher_02.cpp)
 add_executable(mix_subscriber_01 src/mix_subscriber_01.cpp)
+add_executable(counter_publisher src/counter_publisher.cpp)
+add_executable(greet_publisher src/greet_publisher.cpp)
 ament_target_dependencies(simple_publisher rclcpp std_msgs)
 ament_target_dependencies(simple_subscriber rclcpp std_msgs)
 ament_target_dependencies(mix_publisher_01 rclcpp std_msgs)
 ament_target_dependencies(mix_publisher_02 rclcpp std_msgs)
 ament_target_dependencies(mix_subscriber_01 rclcpp std_msgs)
+ament_target_dependencies(counter_publisher rclcpp std_msgs)
+ament_target_dependencies(greet_publisher rclcpp std_msgs)
 
 install(TARGETS
   simple_publisher
@@ -41,5 +45,7 @@ install(TARGETS
   mix_publisher_01
   mix_publisher_02
   mix_subscriber_01
+  counter_publisher
+  greet_publisher
   DESTINATION lib/${PROJECT_NAME}
 )
